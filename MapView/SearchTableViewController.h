@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SearchTableViewController : UIViewController
+@interface SearchTableViewController : UITableViewController
+
+@property (nonatomic,strong) NSMutableArray *locationsDataArray;
 
 @end

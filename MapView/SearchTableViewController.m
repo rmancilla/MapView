@@ -7,26 +7,30 @@
 //
 
 #import "SearchTableViewController.h"
+#import "Location.h"
+//#import "LocationDataController.h"
 
 @interface SearchTableViewController ()
+
+@property (strong, nonatomic) IBOutlet UITableViewCell *dbhButton;
+@property (strong, nonatomic) IBOutlet UITableViewCell *icsButton;
+@property (strong, nonatomic) IBOutlet UITableViewCell *studentCenterButton;
 
 @end
 
 @implementation SearchTableViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
+@synthesize locationsDataArray = _locationsDataArray;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+
+    // Uncomment the following line to preserve selection between presentations.
+    //self.clearsSelectionOnViewWillAppear = NO;
+   
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    //self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning
@@ -34,5 +38,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
 
 @end
