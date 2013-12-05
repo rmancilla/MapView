@@ -8,10 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
+
+@class BrowseViewController;
+
+@protocol BrowseViewControllerDelegate <NSObject>
+-(void)browseViewControllerDidGoBack:(BrowseViewController *)controller;
+-(void)browseViewControllerDidSelect:(BrowseViewController *)controller;
+@end
+
 @interface BrowseViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 
+@property (nonatomic, weak) id <BrowseViewControllerDelegate> delegate;
 
+-(IBAction)cancel:(id)sender;
 
 @end

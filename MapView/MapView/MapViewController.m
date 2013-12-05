@@ -9,7 +9,6 @@
 #import "MapViewController.h"
 #import <GoogleMaps/GoogleMaps.h>
 #import "BrowseViewController.h"
-#import "SearchTableViewController.h"
 
 @interface MapViewController ()
 
@@ -34,12 +33,13 @@
     mapView_.settings.myLocationButton = YES;
     self.view = mapView_;
     
+    
     //Create a marker in the center
-    GMSMarker *marker = [[GMSMarker alloc] init];
+    /*GMSMarker *marker = [[GMSMarker alloc] init];
     marker.position = CLLocationCoordinate2DMake(33.646493, -117.842102);
     marker.title = @"Here I am!";
     marker.snippet = @"yay";
-    marker.map = mapView_;
+    marker.map = mapView_;*/
     
     [mapView_ addSubview:_searchButton];
     [mapView_ bringSubviewToFront:_searchButton];
@@ -47,12 +47,35 @@
    	
 }
 
--(IBAction)buttonPressed:(id)sender
-{
+#pragma mark - PlayerDetailsViewControllerDelegate
 
+-(void)browseViewControllerDidGoBack:(BrowseViewController *)controller
+{
+    //[self.navigationController popViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void)didReceiveMemoryWarning
+-(void)browseViewControllerDidSelect:(BrowseViewController *)controller
+{
+    //[self.navigationController popViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"toBrowseView"])
+    {
+        //NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        
+        UINavigationController *naviController = segue.destinationViewController;
+        BrowseViewController *browseViewController  = [naviController viewControllers][0];
+        browseViewController.delegate = self;
+        
+    }
+}
+
+-(void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

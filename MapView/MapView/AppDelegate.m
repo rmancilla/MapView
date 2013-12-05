@@ -13,7 +13,6 @@
 
 @implementation AppDelegate
 {
-    NSMutableArray *_locations;
 }
 
 @synthesize destinationData;

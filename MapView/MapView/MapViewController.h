@@ -8,12 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
-#import "GCGeoCodingService.h"
+#import "BrowseViewController.h"
 
-@interface MapViewController : UIViewController
+@interface MapViewController : UIViewController <BrowseViewControllerDelegate>
 
-@property (strong, nonatomic) UITableViewCell *cell;
-
--(IBAction)buttonPressed:(id)sender;
 
 @end

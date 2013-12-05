@@ -7,6 +7,7 @@
 //
 
 #import "BrowseViewController.h"
+#import "Location.h"
 
 @interface BrowseViewController ()
 
@@ -21,7 +22,19 @@
 {
     [super viewDidLoad];
     
-    buildingsArray = [NSArray arrayWithObjects:@"Donald Bren Hall", @"ICS", nil];
+    Location *dbh = [[Location alloc]init];
+    dbh.name = @"Donald Bren Hall";
+    dbh.subTitle = @"Department of Informatics";
+    dbh.latitude = 33.643255;
+    dbh.longtitude = -117.842009;
+    
+    Location *ics = [[Location alloc]init];
+    ics.name = @"ICS";
+    ics.subTitle = @"Information and Computer Science";
+    ics.latitude = 33.643255;
+    ics.longtitude = -117.842009;
+    
+    buildingsArray = [NSArray arrayWithObjects:dbh, ics, nil];
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -31,17 +44,30 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    //static NSString *simpleTableIdentifier = @"BuildingCell";
+    //static NSString *simpleTableIdentifier = @"locationCell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"BuildingCell"];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"locationCell"];
     
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"BuildingCell"];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"locationCell"];
     }
     
-    cell.textLabel.text = [buildingsArray objectAtIndex:indexPath.row];
+    Location *location = [[Location alloc]init];
+    location = [buildingsArray objectAtIndex:indexPath.row];
+    cell.textLabel.text = location.name;
+    cell.detailTextLabel.text = location.subTitle;
     
     return cell;
+}
+
+-(IBAction)cancel:(id)sender
+{
+    [self.delegate browseViewControllerDidGoBack:self];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    //[self.delegate browseViewControllerDidSelect:self];
 }
 
 

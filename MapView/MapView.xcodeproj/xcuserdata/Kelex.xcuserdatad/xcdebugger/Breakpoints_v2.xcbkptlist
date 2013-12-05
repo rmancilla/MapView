@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MapView/BrowseViewController.m"
-            timestampString = "407197549.890652"
+            timestampString = "407815780.707953"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
             landmarkName = "@implementation BrowseViewController"
             landmarkType = "3">
          </BreakpointContent>

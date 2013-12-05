@@ -10,7 +10,6 @@
 		D52F77A81839F118005A5BDA /* Building Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = D52F77A71839F118005A5BDA /* Building Property List.plist */; };
 		D52F77AB1839FE0F005A5BDA /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = D52F77AA1839FE0F005A5BDA /* Location.m */; };
 		D52F77AE1839FE2E005A5BDA /* LocationDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = D52F77AD1839FE2E005A5BDA /* LocationDataController.m */; };
-		D53C470518469E4400FA3173 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D53C470418469E4400FA3173 /* TestViewController.m */; };
 		D5507CD118332046002A21B7 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5507CD018332046002A21B7 /* GoogleMaps.framework */; };
 		D5507CD318332053002A21B7 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D5507CD218332053002A21B7 /* GoogleMaps.bundle */; };
 		D5507CD51833212B002A21B7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5507CD41833212B002A21B7 /* AVFoundation.framework */; };
@@ -64,8 +63,6 @@
 		D52F77AA1839FE0F005A5BDA /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
 		D52F77AC1839FE2E005A5BDA /* LocationDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationDataController.h; sourceTree = "<group>"; };
 		D52F77AD1839FE2E005A5BDA /* LocationDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationDataController.m; sourceTree = "<group>"; };
-		D53C470318469E4400FA3173 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
-		D53C470418469E4400FA3173 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		D5507CD018332046002A21B7 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
 		D5507CD218332053002A21B7 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		D5507CD41833212B002A21B7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -222,8 +219,6 @@
 				D55D4BE31833005E00290F04 /* AppDelegate.h */,
 				D55D4BE41833005E00290F04 /* AppDelegate.m */,
 				D55D4BE61833005E00290F04 /* Main.storyboard */,
-				D53C470318469E4400FA3173 /* TestViewController.h */,
-				D53C470418469E4400FA3173 /* TestViewController.m */,
 				D5009B83184EC1FF00D50EC3 /* Dialer */,
 				D52F77A91839FE0F005A5BDA /* Location.h */,
 				D52F77AA1839FE0F005A5BDA /* Location.m */,
@@ -378,7 +373,6 @@
 				D5D59C7F1845A3C8006F207B /* GCGeoCodingService.m in Sources */,
 				D52F77AB1839FE0F005A5BDA /* Location.m in Sources */,
 				D5F3122A184692E000FA4B8B /* DialerPageViewController.m in Sources */,
-				D53C470518469E4400FA3173 /* TestViewController.m in Sources */,
 				D52F77AE1839FE2E005A5BDA /* LocationDataController.m in Sources */,
 				D5D59C7C184533BF006F207B /* BrowseViewController.m in Sources */,
 				D55D4BE51833005E00290F04 /* AppDelegate.m in Sources */,
