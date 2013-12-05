@@ -221,6 +221,18 @@ typedef enum {
 @property(nonatomic, assign) GMSMapViewType mapType;
 
 /**
+ * Minimum zoom (the farthest the camera may be zoomed out). Defaults to
+ * kGMSMinZoomLevel. Modified with -setMinZoom:maxZoom:.
+ */
+@property(nonatomic, assign, readonly) float minZoom;
+
+/**
+ * Maximum zoom (the closest the camera may be to the Earth). Defaults to
+ * kGMSMaxZoomLevel. Modified with -setMinZoom:maxZoom:.
+ */
+@property(nonatomic, assign, readonly) float maxZoom;
+
+/**
  * If set, 3D buildings will be shown where available.  Defaults to YES.
  *
  * This may be useful when adding a custom tile layer to the map, in order to
@@ -284,18 +296,14 @@ typedef enum {
 + (instancetype)mapWithFrame:(CGRect)frame camera:(GMSCameraPosition *)camera;
 
 /**
- * Tells this map to power up its renderer.  This is optional- GMSMapView will
- * automatically invoke this method when added to a window.  It is safe to call
- * this method more than once.
+ * Tells this map to power up its renderer. This is optional and idempotent.
  */
-- (void)startRendering;
+- (void)startRendering __GMS_AVAILABLE_BUT_DEPRECATED;
 
 /**
- * Tells this map to power down its renderer, releasing its resources.  This is
- * optional- GMSMapView will automatically invoke this method when removed from
- * a window.  It is safe to call this method more than once.
+ * Tells this map to power down its renderer. This is optional and idempotent.
  */
-- (void)stopRendering;
+- (void)stopRendering __GMS_AVAILABLE_BUT_DEPRECATED;
 
 /**
  * Clears all markup that has been added to the map, including markers,
@@ -303,6 +311,13 @@ typedef enum {
  * or reset the current mapType.
  */
 - (void)clear;
+
+/**
+ * Sets |minZoom| and |maxZoom|. This method expects the minimum to be less than
+ * or equal to the maximum, and will throw an exception with name
+ * NSRangeException otherwise.
+ */
+- (void)setMinZoom:(float)minZoom maxZoom:(float)maxZoom;
 
 /**
  * Build a GMSCameraPosition that presents |bounds| with |padding|. The camera

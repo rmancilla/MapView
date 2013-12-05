@@ -7,11 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4142B7F118502E57007CA48B /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4142B7F018502E57007CA48B /* GoogleMaps.framework */; };
+		4142B7F318502E65007CA48B /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4142B7F218502E65007CA48B /* GoogleMaps.bundle */; };
+		4142B80118503793007CA48B /* Dialer-CCbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 4142B7F418503793007CA48B /* Dialer-CCbutton.png */; };
+		4142B80218503793007CA48B /* Dialer-CIRCLE911button.png in Resources */ = {isa = PBXBuildFile; fileRef = 4142B7F518503793007CA48B /* Dialer-CIRCLE911button.png */; };
+		4142B80318503793007CA48B /* Dialer-CSObutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 4142B7F618503793007CA48B /* Dialer-CSObutton.png */; };
+		4142B80418503793007CA48B /* Dialer-dispatchbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 4142B7F718503793007CA48B /* Dialer-dispatchbutton.png */; };
+		4142B80518503793007CA48B /* Dialer-EHbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 4142B7F818503793007CA48B /* Dialer-EHbutton.png */; };
+		4142B80618503793007CA48B /* Dialer-EMbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 4142B7F918503793007CA48B /* Dialer-EMbutton.png */; };
+		4142B80718503793007CA48B /* Dialer-FMSDbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 4142B7FA18503793007CA48B /* Dialer-FMSDbutton.png */; };
+		4142B80818503793007CA48B /* Dialer-OITbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 4142B7FB18503793007CA48B /* Dialer-OITbutton.png */; };
+		4142B80918503793007CA48B /* Dialer-SHbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 4142B7FC18503793007CA48B /* Dialer-SHbutton.png */; };
+		4142B80A18503793007CA48B /* Dialer-SQUARE911button.png in Resources */ = {isa = PBXBuildFile; fileRef = 4142B7FD18503793007CA48B /* Dialer-SQUARE911button.png */; };
+		4142B80B18503793007CA48B /* Dialer-UCIEILbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 4142B7FE18503793007CA48B /* Dialer-UCIEILbutton.png */; };
+		4142B80C18503793007CA48B /* UCIPD-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4142B7FF18503793007CA48B /* UCIPD-icon.png */; };
+		4142B80D18503793007CA48B /* ZOTFINDERTITLELOGO.png in Resources */ = {isa = PBXBuildFile; fileRef = 4142B80018503793007CA48B /* ZOTFINDERTITLELOGO.png */; };
 		D52F77A81839F118005A5BDA /* Building Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = D52F77A71839F118005A5BDA /* Building Property List.plist */; };
 		D52F77AB1839FE0F005A5BDA /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = D52F77AA1839FE0F005A5BDA /* Location.m */; };
 		D52F77AE1839FE2E005A5BDA /* LocationDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = D52F77AD1839FE2E005A5BDA /* LocationDataController.m */; };
-		D5507CD118332046002A21B7 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5507CD018332046002A21B7 /* GoogleMaps.framework */; };
-		D5507CD318332053002A21B7 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D5507CD218332053002A21B7 /* GoogleMaps.bundle */; };
 		D5507CD51833212B002A21B7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5507CD41833212B002A21B7 /* AVFoundation.framework */; };
 		D5507CD71833213D002A21B7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5507CD61833213D002A21B7 /* CoreData.framework */; };
 		D5507CD918332168002A21B7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5507CD818332168002A21B7 /* CoreLocation.framework */; };
@@ -58,13 +71,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4142B7F018502E57007CA48B /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
+		4142B7F218502E65007CA48B /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = "../../../../../../Desktop/GoogleMaps-iOS-1.6.1/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle"; sourceTree = "<group>"; };
+		4142B7F418503793007CA48B /* Dialer-CCbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dialer-CCbutton.png"; path = "../../../../../../../Desktop/dialing/images/Dialer-CCbutton.png"; sourceTree = "<group>"; };
+		4142B7F518503793007CA48B /* Dialer-CIRCLE911button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dialer-CIRCLE911button.png"; path = "../../../../../../../Desktop/dialing/images/Dialer-CIRCLE911button.png"; sourceTree = "<group>"; };
+		4142B7F618503793007CA48B /* Dialer-CSObutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dialer-CSObutton.png"; path = "../../../../../../../Desktop/dialing/images/Dialer-CSObutton.png"; sourceTree = "<group>"; };
+		4142B7F718503793007CA48B /* Dialer-dispatchbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dialer-dispatchbutton.png"; path = "../../../../../../../Desktop/dialing/images/Dialer-dispatchbutton.png"; sourceTree = "<group>"; };
+		4142B7F818503793007CA48B /* Dialer-EHbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dialer-EHbutton.png"; path = "../../../../../../../Desktop/dialing/images/Dialer-EHbutton.png"; sourceTree = "<group>"; };
+		4142B7F918503793007CA48B /* Dialer-EMbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dialer-EMbutton.png"; path = "../../../../../../../Desktop/dialing/images/Dialer-EMbutton.png"; sourceTree = "<group>"; };
+		4142B7FA18503793007CA48B /* Dialer-FMSDbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dialer-FMSDbutton.png"; path = "../../../../../../../Desktop/dialing/images/Dialer-FMSDbutton.png"; sourceTree = "<group>"; };
+		4142B7FB18503793007CA48B /* Dialer-OITbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dialer-OITbutton.png"; path = "../../../../../../../Desktop/dialing/images/Dialer-OITbutton.png"; sourceTree = "<group>"; };
+		4142B7FC18503793007CA48B /* Dialer-SHbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dialer-SHbutton.png"; path = "../../../../../../../Desktop/dialing/images/Dialer-SHbutton.png"; sourceTree = "<group>"; };
+		4142B7FD18503793007CA48B /* Dialer-SQUARE911button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dialer-SQUARE911button.png"; path = "../../../../../../../Desktop/dialing/images/Dialer-SQUARE911button.png"; sourceTree = "<group>"; };
+		4142B7FE18503793007CA48B /* Dialer-UCIEILbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dialer-UCIEILbutton.png"; path = "../../../../../../../Desktop/dialing/images/Dialer-UCIEILbutton.png"; sourceTree = "<group>"; };
+		4142B7FF18503793007CA48B /* UCIPD-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "UCIPD-icon.png"; path = "../../../../../../../Desktop/dialing/images/UCIPD-icon.png"; sourceTree = "<group>"; };
+		4142B80018503793007CA48B /* ZOTFINDERTITLELOGO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ZOTFINDERTITLELOGO.png; path = ../../../../../../../Desktop/dialing/images/ZOTFINDERTITLELOGO.png; sourceTree = "<group>"; };
 		D52F77A71839F118005A5BDA /* Building Property List.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Building Property List.plist"; sourceTree = "<group>"; };
 		D52F77A91839FE0F005A5BDA /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
 		D52F77AA1839FE0F005A5BDA /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
 		D52F77AC1839FE2E005A5BDA /* LocationDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationDataController.h; sourceTree = "<group>"; };
 		D52F77AD1839FE2E005A5BDA /* LocationDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationDataController.m; sourceTree = "<group>"; };
-		D5507CD018332046002A21B7 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
-		D5507CD218332053002A21B7 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		D5507CD41833212B002A21B7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D5507CD61833213D002A21B7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		D5507CD818332168002A21B7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -127,7 +153,7 @@
 				D5507CD51833212B002A21B7 /* AVFoundation.framework in Frameworks */,
 				D55D4BD71833005E00290F04 /* CoreGraphics.framework in Frameworks */,
 				D55D4BD91833005E00290F04 /* UIKit.framework in Frameworks */,
-				D5507CD118332046002A21B7 /* GoogleMaps.framework in Frameworks */,
+				4142B7F118502E57007CA48B /* GoogleMaps.framework in Frameworks */,
 				D55D4BD51833005E00290F04 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -157,6 +183,19 @@
 		D52F77AF183B44E8005A5BDA /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				4142B7F418503793007CA48B /* Dialer-CCbutton.png */,
+				4142B7F518503793007CA48B /* Dialer-CIRCLE911button.png */,
+				4142B7F618503793007CA48B /* Dialer-CSObutton.png */,
+				4142B7F718503793007CA48B /* Dialer-dispatchbutton.png */,
+				4142B7F818503793007CA48B /* Dialer-EHbutton.png */,
+				4142B7F918503793007CA48B /* Dialer-EMbutton.png */,
+				4142B7FA18503793007CA48B /* Dialer-FMSDbutton.png */,
+				4142B7FB18503793007CA48B /* Dialer-OITbutton.png */,
+				4142B7FC18503793007CA48B /* Dialer-SHbutton.png */,
+				4142B7FD18503793007CA48B /* Dialer-SQUARE911button.png */,
+				4142B7FE18503793007CA48B /* Dialer-UCIEILbutton.png */,
+				4142B7FF18503793007CA48B /* UCIPD-icon.png */,
+				4142B80018503793007CA48B /* ZOTFINDERTITLELOGO.png */,
 				D5D59C8218468A45006F207B /* emergencyicon.png */,
 				D5D59C8318468A45006F207B /* mapicon-white.png */,
 				D5D59C8418468A45006F207B /* phonebuttonhome-White.png */,
@@ -188,6 +227,8 @@
 		D55D4BD31833005E00290F04 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4142B7F218502E65007CA48B /* GoogleMaps.bundle */,
+				4142B7F018502E57007CA48B /* GoogleMaps.framework */,
 				D5507CEA1833222D002A21B7 /* SystemConfiguration.framework */,
 				D5507CE8183321FF002A21B7 /* QuartzCore.framework */,
 				D5507CE6183321F2002A21B7 /* OpenGLES.framework */,
@@ -200,8 +241,6 @@
 				D5507CD818332168002A21B7 /* CoreLocation.framework */,
 				D5507CD61833213D002A21B7 /* CoreData.framework */,
 				D5507CD41833212B002A21B7 /* AVFoundation.framework */,
-				D5507CD218332053002A21B7 /* GoogleMaps.bundle */,
-				D5507CD018332046002A21B7 /* GoogleMaps.framework */,
 				D55D4BD41833005E00290F04 /* Foundation.framework */,
 				D55D4BD61833005E00290F04 /* CoreGraphics.framework */,
 				D55D4BD81833005E00290F04 /* UIKit.framework */,
@@ -342,15 +381,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4142B7F318502E65007CA48B /* GoogleMaps.bundle in Resources */,
+				4142B80918503793007CA48B /* Dialer-SHbutton.png in Resources */,
 				D5D59C8518468A45006F207B /* emergencyicon.png in Resources */,
+				4142B80118503793007CA48B /* Dialer-CCbutton.png in Resources */,
+				4142B80518503793007CA48B /* Dialer-EHbutton.png in Resources */,
+				4142B80C18503793007CA48B /* UCIPD-icon.png in Resources */,
+				4142B80618503793007CA48B /* Dialer-EMbutton.png in Resources */,
+				4142B80D18503793007CA48B /* ZOTFINDERTITLELOGO.png in Resources */,
 				D5D59C8618468A45006F207B /* mapicon-white.png in Resources */,
+				4142B80A18503793007CA48B /* Dialer-SQUARE911button.png in Resources */,
 				D55D4BED1833005E00290F04 /* Images.xcassets in Resources */,
 				D55D4BDF1833005E00290F04 /* InfoPlist.strings in Resources */,
 				D5D59C8718468A45006F207B /* phonebuttonhome-White.png in Resources */,
+				4142B80218503793007CA48B /* Dialer-CIRCLE911button.png in Resources */,
 				D55D4BE81833005E00290F04 /* Main.storyboard in Resources */,
-				D5507CD318332053002A21B7 /* GoogleMaps.bundle in Resources */,
+				4142B80818503793007CA48B /* Dialer-OITbutton.png in Resources */,
 				D52F77A81839F118005A5BDA /* Building Property List.plist in Resources */,
+				4142B80718503793007CA48B /* Dialer-FMSDbutton.png in Resources */,
+				4142B80318503793007CA48B /* Dialer-CSObutton.png in Resources */,
 				D5D59C81184688A1006F207B /* Dialer-SQUARE911button.png in Resources */,
+				4142B80418503793007CA48B /* Dialer-dispatchbutton.png in Resources */,
+				4142B80B18503793007CA48B /* Dialer-UCIEILbutton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +562,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/Kelex/Documents/Xcode_projects/MapView,
+					/Users/appjam/Documents/MapView/MapView/MapView/MapView/MapView,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MapView/MapView-Prefix.pch";
@@ -530,6 +583,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/Kelex/Documents/Xcode_projects/MapView,
+					/Users/appjam/Documents/MapView/MapView/MapView/MapView/MapView,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MapView/MapView-Prefix.pch";
